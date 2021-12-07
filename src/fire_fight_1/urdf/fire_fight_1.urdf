@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="fire_fight_1">
+  <link name="dummy">
+  </link>
+  <joint name="dummy_joint" type="fixed">
+    <parent link="dummy"/>
+    <child link="Chassis"/>
+  </joint>
+  <link
+    name="Chassis">
+    <inertial>
+      <origin
+        xyz="0 0.0041296 0.03787"
+        rpy="0 1 0" />
+      <mass
+        value="1.365" />
+      <inertia
+        ixx="0.2401"
+        ixy="-2.8219E-17"
+        ixz="-3.2291E-19"
+        iyy="0.17437"
+        iyz="-0.00011945"
+        izz="0.40145" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fire_fight_1/meshes/Chassis.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fire_fight_1/meshes/Chassis.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="A_link1">
+    <inertial>
+      <origin
+        xyz="-0.0018147 0.001304 0.079067"
+        rpy="0 0 0" />
+      <mass
+        value="0.070683" />
+      <inertia
+        ixx="0.0018663"
+        ixy="-1.5681E-06"
+        ixz="9.6484E-05"
+        iyy="0.0018653"
+        iyz="-6.9333E-05"
+        izz="0.00050046" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fire_fight_1/meshes/A_link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fire_fight_1/meshes/A_link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="A1"
+    type="revolute">
+    <origin
+      xyz="0 0 0.0254"
+      rpy="0 0 0.7" />
+    <parent
+      link="Chassis" />
+    <child
+      link="A_link1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="6.28"
+      effort="1000"
+      velocity="1" />
+  </joint>
+  <link
+    name="A_link2">
+    <inertial>
+      <origin
+        xyz="0.0044859 0.088677 0.0033545"
+        rpy="0 0 0" />
+      <mass
+        value="0.066025" />
+      <inertia
+        ixx="0.0015864"
+        ixy="-5.7236E-05"
+        ixz="-1.2367E-08"
+        iyy="0.00045786"
+        iyz="-2.4447E-07"
+        izz="0.0015967" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fire_fight_1/meshes/A_link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fire_fight_1/meshes/A_link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="A2"
+    type="revolute">
+    <origin
+      xyz="0 0 0.17526"
+      rpy="1.5708 0 0.94776" />
+    <parent
+      link="A_link1" />
+    <child
+      link="A_link2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="1000"
+      velocity="1" />
+  </joint>
+  <link
+    name="A_link3">
+    <inertial>
+      <origin
+        xyz="-0.0090929 0.061252 0.0021704"
+        rpy="0 0 0" />
+      <mass
+        value="0.042671" />
+      <inertia
+        ixx="0.00050673"
+        ixy="3.118E-05"
+        ixz="-6.1988E-06"
+        iyy="0.00030132"
+        iyz="4.1756E-05"
+        izz="0.00051337" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fire_fight_1/meshes/A_link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fire_fight_1/meshes/A_link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="A3"
+    type="revolute">
+    <origin
+      xyz="0.0088546 0.17504 0"
+      rpy="3.1416 0 3.1416" />
+    <parent
+      link="A_link2" />
+    <child
+      link="A_link3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="1000"
+      velocity="1" />
+  </joint>
+  <link
+    name="Holder_1">
+    <inertial>
+      <origin
+        xyz="-0.05393 0.0007167 -0.0381"
+        rpy="0 0 0" />
+      <mass
+        value="0.3321" />
+      <inertia
+        ixx="0.00054535"
+        ixy="7.1707E-06"
+        ixz="6.4297E-19"
+        iyy="0.0010848"
+        iyz="-1.7651E-20"
+        izz="0.00074013" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fire_fight_1/meshes/Holder_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fire_fight_1/meshes/Holder_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="H1"
+    type="revolute">
+    <origin
+      xyz="-0.1524 0.1397 0"
+      rpy="0 0 0" />
+    <parent
+      link="Chassis" />
+    <child
+      link="Holder_1" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.75"
+      upper="1.75"
+      effort="1000"
+      velocity="1" />
+  </joint>
+  <link
+    name="Wheel">
+    <inertial>
+      <origin
+        xyz="0 0 -1.3878E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.86875" />
+      <inertia
+        ixx="0.0015267"
+        ixy="5.1618E-20"
+        ixz="-3.3881E-21"
+        iyy="0.0015267"
+        iyz="-8.1367E-21"
+        izz="0.0026798" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fire_fight_1/meshes/Wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fire_fight_1/meshes/Wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="W1"
+    type="continuous">
+    <origin
+      xyz="-0.12191 0.0016201 -0.0381"
+      rpy="1.5708 0 -1.5841" />
+    <parent
+      link="Holder_1" />
+    <child
+      link="Wheel" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Holder_2">
+    <inertial>
+      <origin
+        xyz="0.053923 -0.0011082 -0.0381"
+        rpy="0 0 0" />
+      <mass
+        value="0.3321" />
+      <inertia
+        ixx="0.00054548"
+        ixy="1.1087E-05"
+        ixz="-4.6956E-19"
+        iyy="0.0010847"
+        iyz="6.2287E-20"
+        izz="0.00074013" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fire_fight_1/meshes/Holder_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fire_fight_1/meshes/Holder_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="H2"
+    type="revolute">
+    <origin
+      xyz="0.1524 0.1397 0"
+      rpy="0 0 0" />
+    <parent
+      link="Chassis" />
+    <child
+      link="Holder_2" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.75"
+      upper="1.75"
+      effort="1000"
+      velocity="1" />
+  </joint>
+  <link
+    name="Wheel2">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.86875" />
+      <inertia
+        ixx="0.0015267"
+        ixy="6.5227E-20"
+        ixz="2.7105E-20"
+        iyy="0.0015267"
+        iyz="-1.208E-19"
+        izz="0.0026798" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fire_fight_1/meshes/Wheel2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fire_fight_1/meshes/Wheel2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="W2"
+    type="continuous">
+    <origin
+      xyz="0.12189 -0.0025052 -0.0381"
+      rpy="1.5708 0 1.5502" />
+    <parent
+      link="Holder_2" />
+    <child
+      link="Wheel2" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Wheel3">
+    <inertial>
+      <origin
+        xyz="0 0 -1.3878E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.86875" />
+      <inertia
+        ixx="0.0015267"
+        ixy="1.0688E-19"
+        ixz="1.1392E-19"
+        iyy="0.0015267"
+        iyz="9.6195E-20"
+        izz="0.0026798" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fire_fight_1/meshes/Wheel3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fire_fight_1/meshes/Wheel3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="W3"
+    type="continuous">
+    <origin
+      xyz="-0.254 -0.1651 -0.0381"
+      rpy="-1.5708 0 1.5708" />
+    <parent
+      link="Chassis" />
+    <child
+      link="Wheel3" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Wheel4">
+    <inertial>
+      <origin
+        xyz="-5.5511E-17 5.5511E-17 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.86875" />
+      <inertia
+        ixx="0.0015267"
+        ixy="7.1188E-20"
+        ixz="-1.1577E-19"
+        iyy="0.0015267"
+        iyz="6.95E-20"
+        izz="0.0026798" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fire_fight_1/meshes/Wheel4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fire_fight_1/meshes/Wheel4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="W4"
+    type="continuous">
+    <origin
+      xyz="0.254 -0.1651 -0.0381"
+      rpy="1.5708 0 1.5708" />
+    <parent
+      link="Chassis" />
+    <child
+      link="Wheel4" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <transmission name="RWD_left">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="W3">
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="RWD_left_Motor">
+      <mechanicalReduction>50</mechanicalReduction>
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+  <transmission name="RWD_Right">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="W4">
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="RWD_Right_Motor">
+      <mechanicalReduction>50</mechanicalReduction>
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+  <transmission name="FWD_Right">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="W2">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="FWD_Right_Motor">
+      <mechanicalReduction>50</mechanicalReduction>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+  <transmission name="FWD_Left">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="W1">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="FWD_Left_Motor">
+      <mechanicalReduction>50</mechanicalReduction>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+  <transmission name="Steer_Left">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="H1">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="H1_Motor">
+      <mechanicalReduction>50</mechanicalReduction>
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+  <transmission name="Steer_Right">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="H2">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="H2_Motor">
+      <mechanicalReduction>50</mechanicalReduction>
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+  <transmission name="Arm_1_man">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="A1">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="A1_motor">
+      <mechanicalReduction>50</mechanicalReduction>
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+  <transmission name="Arm_2_man">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="A2">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="A2_motor">
+      <mechanicalReduction>50</mechanicalReduction>
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+  <transmission name="Arm_3_man">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="A3">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="A3_motor">
+      <mechanicalReduction>50</mechanicalReduction>
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+</robot>
