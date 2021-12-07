@@ -16,10 +16,10 @@ Extract the folder 'Fire_fighting_bot_simulation_in-gazebo_using-feedback_from_l
  Open a new terminal and type 
    #### source /opt/ros/noetic/setup.bash
    #### source ~/catkin_ws/devel/setup.bash
-   #### rosrun fire_fight_1 lidar.py
-  If the above command does not work, it is mostly because lidar.py is not an executable.
-  Alternative: To make lidar.py an executable. Go to catkin_ws/src/fire_fight_1/src , and type 
-   #### chmod +x lidar.py
+   #### rosrun fire_fight_1 teleop.py
+  If the above command does not work, it is mostly because teleop.py is not an executable.
+  Alternative: To make teleop.py an executable. Go to catkin_ws/src/fire_fight_1/src , and type 
+   #### chmod +x teleop.py
    Repeat from Step 2.
 
 Now, the teleop is running and you can press the mentioned keys to control the robot.
