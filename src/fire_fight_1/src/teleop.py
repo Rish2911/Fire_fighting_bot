@@ -30,7 +30,9 @@ Moving around:
    j    k    l
    m    ,    .
 Arm movement:
-   a    s    d (a-first link, s- second link , d-end effector)
+   q and w- end effector, 
+   a and s- second link 
+   z and x - first link)
 
 space key, k : force stop
 anything else : stop smoothly
