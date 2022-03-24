@@ -26,3 +26,5 @@ Extract the folder 'Fire_fighting_bot-main' and copy the folder 'fire_fight_1', 
    Repeat from Step 2.
 
 Now, the teleop is running and you can press the mentioned keys to control the robot.
+
+![alt-text](https://github.com/Rish2911/Fire_fighting_bot_with_obstacle-avoidance-using-YP_lidar/blob/main/fire_bot.gif)
